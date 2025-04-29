@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coursework and Projects">
+  <title>Ant C. Coursework and Homelab Projects</title>
+  <!--Don't judge my HTML, I only dabble.-->
+
+  <style>
+
+    body 
+    {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eaeaea;
+      line-height: 1.6;
+    }
+
+    nav 
+    {
+      background: #0c2340;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left 
+    {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-right a 
+    {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-right a:hover 
+    {
+      text-decoration: underline;
+    }
+
+    main 
+    {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section 
+    {
+      margin-bottom: 2rem;
+    }
+
+    footer 
+    {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #0c2340;
+      color: #fff;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    .pdf-link 
+    {
+      display: block;
+      margin: 1.5rem 0;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, background-color 0.2s;
+      border-bottom: 2px solid #f15a22;
+    }
+
+    .summary-box 
+    {
+      max-height: 4.5em; /* enough for ~3 lines */
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .pdf-link:hover .summary-box 
+    {
+      background: #f0f0f0;
+      transform: translateY(-5px);
+      max-height: 1000px; /* enough to fully expand */
+    }
+
+    .pdf-link h3 
+    {
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
+      color: #0c2340;
+      display: flex;
+      align-items: center;
+    }
+
+    .pdf-link h3 svg 
+    {
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .pdf-link p 
+    {
+      margin: 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .button-container 
+    {
+      margin-top: 1.5rem;
+    }
+
+    .homelab-button 
+    {
+      background: #0c2340;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .homelab-button:hover 
+    {
+      background: #1d3a6e;
+    }
+
+    ul.specs-list 
+    {
+      list-style-type: disc;
+      margin: 1rem 0 0 1.5rem;
+      padding: 0;
+      color: #333;
+    }
+
+    .list-container 
+    {
+    display: flex;
+    justify-content: center;
+    gap: 4rem; /* spacing between the two systems */
+    margin-top: 2rem;
+    }
+
+    .list-block 
+    {
+    text-align: center; /* center the title and list */
+    }
+
+    .list-block ul 
+    {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left; /* align list items left for readability */
+    display: inline-block; /* keeps list narrow */
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="nav-left">
+      Anthony C.
+    </div>
+
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="#university">University Work</a>
+      <a href="#homelab">Homelab Work</a>
+      <a href="#about">About</a>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <section id="home">
+      <h2>Home</h2>
+      <p>This site showcases my Cybersecurity and IT projects on GitHub. It includes university lab work focused on network packet analysis, system forensics, threat detection, and security operations. 
+      I will also be posting additional home lab projects that demonstrate my ongoing skills development and hands-on experience.</p>
+  
+    </section>
+
+    <section id="university">
+
+      <h2>University Work</h2>
+      <p>Please hover for summary, or click a link to view pdf:</p>
+
+      <a class="pdf-link" href="files/Applying Encryption and Hashing Algorithms for Secure Communications.pdf" target="_blank">
+        <h3>Applying Encryption and Hashing Algorithms for Secure Communications</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> February 2024</p>
+        <p>
+            In this lab, I gained hands-on experience with essential encryption and hashing techniques to secure communications. Using Linux-based tools, I generated and verified MD5, SHA1, and 
+            SHA256 hashes to ensure data integrity. I also created and managed GnuPG keys, practiced secure key exchanges, and encrypted and decrypted cleartext messages between users. Additionally, 
+            I analyzed RSA and ECDSA encryption methods, enhancing my understanding of modern cryptographic standards. This work strengthened my practical skills in file verification, secure messaging,
+            and encryption key management, preparing me for real-world cybersecurity applications.
+        </p>
+        </div>
+      </a>
+
+      <a class="pdf-link" href="files/Windows Intrusion Event Analysis.pdf" target="_blank">
+        <h3>Windows Intrusion Event Analysis</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> September 2024</p>
+        <p>
+            In this lab, I conducted a detailed analysis of network traffic using tools such as Wireshark, NetworkMiner, and SNORT, focusing on identifying potential security threats. By examining 
+            captured packets, I uncovered evidence of an ARP spoofing attack and a Man-in-the-Middle compromise involving an IP network camera masquerading as the legitimate device on the network. 
+            The analysis identified suspicious communications, protocol behaviors, and discrepancies that pointed to malicious activity.
+        </p>
+        <p>
+            The lab demonstrated my ability to interpret packet data, assess protocol hierarchies, and utilize security tools to detect and analyze network threats. My findings highlighted the 
+            importance of implementing robust security measures to mitigate the risks of similar attacks, including device resets, firmware updates, and stronger network access controls.
+        </p>
+        </div>
+      </a>
+
+      <a class="pdf-link" href="files/Malware Event Investigation and Recovery.pdf" target="_blank">
+        <h3>Malware Event Investigation and Recovery</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> October 2024</p>
+        <p>
+            This report details a forensic analysis of a compromised Windows XP system, conducted within the SimSpace Cyber Range environment. The investigation focused on identifying the intrusion
+            vector and tracing attacker activities using a combination of Kali Linux and Windows FLARE VM tools.
+        </p>
+        <p>
+            Key findings include the identification of multiple open ports (21, 25, 80, 6666/6667) with several vulnerabilities exploited for unauthorized access. Notably, Poisonivy.exe, a well-known 
+            remote access trojan (RAT), was detected alongside backdoors such as Netcat and VNC. Logs from FTP, web services, and system events revealed patterns of unauthorized access and data 
+            manipulation.
+        </p>
+        <p>
+            This analysis employed Nmap, Metasploit, and other forensic tools to map the attacker's steps, gather critical evidence, and assess the overall system compromise. The case study emphasizes 
+            the importance of comprehensive log analysis and the risks associated with open ports and unpatched services in a networked environment.
+        </p>
+        </div>
+      </a>
+
+      <a class="pdf-link" href="files/Memory Dump Investigation.pdf" target="_blank">
+        <h3>Memory Dump Investigation</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> November 2024</p>
+        <p>
+            In this lab, I used Volatility to investigate a Windows XP memory dump for signs of compromise. Initial analysis identified normal system processes but also revealed clear indicators of 
+            malicious activity, including Hacker Defender (rootkit), Cryptcat (covert communications), Beware IRCD, IROFFER (botnet-related), Poison Ivy (remote access trojan), and unauthorized VNC 
+            remote access. Hidden processes were detected through cross-view analysis. Attempts to extract account data were unsuccessful due to file corruption. DLL analysis confirmed suspicious 
+            behaviors linked to these threats, indicating the system was compromised, actively communicating externally, and likely part of a botnet.
+        </p>
+        </div>
+      </a>
+
+      <a class="pdf-link" href="files/Ansible.pdf" target="_blank">
+        <h3>Ansible</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> November 2024</p>
+        <p>
+            In this lab, I used Ansible to automate IT infrastructure management. I created and executed YAML-based playbooks, utilizing the ansible-navigator interface to streamline tasks like 
+            system configuration and application deployment. I configured execution environments to improve playbook execution and customized settings for easier task inspection. Through this hands-on 
+            experience, I gained a solid understanding of how Ansible simplifies automation and enhances consistency across environments, making it a powerful tool for IT operations.
+        </p>
+        </div>
+      </a>
+
+      <a class="pdf-link" href="files/Cyber Attack Packet Analysis.pdf" target="_blank">
+        <h3>Cyber Attack Packet Analysis</h3>
+        <div class="summary-box">
+        <p><strong>Date:</strong> December 2024</p>
+        <p>
+            This report investigates a potential security breach using forensic artifacts such as packet captures (PCAP), application logs, and security logs. The analysis, utilizing tools like 
+            Wireshark and NetworkMiner, reveals suspicious network traffic between two devices (192.168.134.129 and 192.168.134.132), with multiple open ports and abnormal SMB traffic patterns. The 
+            devices exhibit failed SMB logon attempts, encryption for evading detection, and unusual data flow, suggesting a compromise. Signs of data exfiltration, including manipulated TCP flow 
+            control and ARP spoofing, further indicate unauthorized access. Given these findings, it is likely that the EternalBlue exploit was used as the attack vector. Overall, the evidence 
+            confirms a significant security breach, with potential data theft occurring.
+        </p>
+        </div>
+      </a>
+
+    </section>
+
+    <section id="homelab">
+
+        <h2>Virtual Home lab</h2>
+        <p>I operate a Lenovo ThinkCentre M710q desktop that I have upgraded and configured to virtualize home lab environments. I also maintain a "Daily Driver" system for GPU-intensive processes. 
+            Below are the specifications for both machines:</p>
+        
+        <div class="list-container">
+            <ul>
+                <h3>Home Lab Machine</h3>
+                <li>OS: Windows 10 Pro</li>
+                <li>Processor: Intel i7-6700T ~2.8GHz</li>
+                <li>Memory: 32GB (2 x 16GB)</li>
+                <li>GPU: Intel HD Graphics 530</li>
+            </ul>
+
+            <ul>
+                <h3>Daily Driver</h3>
+                <li>OS: Windows 10 Education</li>
+                <li>Processor: AMD Ryzen 7 5800x ~3.8GHz</li>
+                <li>Memory: 32GB (4 x 8GB)</li>
+                <li>GPU: GeForce RTX 3080 (10GB VRAM)</li>
+            </ul>
+        </div>
+
+        <p>Please hover for summary, or click a link to view pdf:</p>
+
+        <a class="pdf-link" href="files/Home Lab Build Virtual Network Defense and Monitoring Project.pdf" target="_blank">
+          <h3>Homelab 1: Virtual Network Defense and Monitoring</h3>
+          <div class="summary-box">
+          <p><strong>Date:</strong> April 2025, ongoing</p>
+          <p>
+            This document outlines a personal cybersecurity home lab project focused on building a network featuring a pfSense firewall, Snort IDS, Windows Server 2019 domain controller with Active Directory 
+            services, and an ELK stack for centralized logging and monitoring. It includes a breakdown of hardware used, milestone achievements, network setup diagrams, troubleshooting notes, and reflections 
+            on lessons learned during each phase. The project emphasizes hands-on learning in network defense, intrusion detection, Active Directory management, and log analysis.
+          </p>
+          </div>
+        </a>
+
+      </section>
+      
+
+    <section id="about">
+
+      <h2>About Me</h2>
+      <p>I'm an IT and Cybersecurity professional currently completing my BBA in Cybersecurity at the University of Texas at San Antonio. My background includes system troubleshooting, network analysis, security incident investigation, and technical support. I have hands-on experience with tools like Wireshark, Volatility, Snort, and the ELK Stack, and have worked in both customer-facing and technical environments.</p>
+      <p>I’m passionate about building secure systems, solving technical challenges, and continuously expanding my skill set. Outside of work and academics, I enjoy video games, movies, and hiking with friends and family.</p>
+   
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anthony Campbell</p>
+  </footer>
+
+</body>
+</html>
